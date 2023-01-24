@@ -1,0 +1,273 @@
+:root {
+    --border-color: #1698d9;    
+    --border-style: 4px solid #1698d9;
+    --text-color-up: #666666;
+    --font-color-white: white;
+    --font-color-gray: #666666;
+    --font-color-black: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.App {     
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 1.6rem;   
+}
+
+.backgroundShadow {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.backgroundShadow h1 {
+    text-align: center;
+    color: var(--font-color-white);
+    padding-bottom: 2.6rem;
+}
+
+.mainSection {
+    display: flex;
+    justify-content: space-evenly;     
+}
+
+.card-default {
+    --border-color: #1698d9; 
+    --border-style: 4px solid #1698d9;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.card-default-hover {
+    --border-color: #2ea8e6; 
+    --border-style: 4px solid #2ea8e6;
+    --border-bottom-underline: 0.1rem dashed #2ea8e6;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-selected {
+    --border-color: #d91667; 
+    --border-style: 4px solid #d91667;
+    cursor: pointer;      
+    position: relative; 
+    overflow: hidden;
+}
+
+.card-selected-hover {
+    --border-color: #e62e7a; 
+    --border-style: 4px solid #e62e7a;
+    --text-color-up: #e62e7a;
+    position: relative;  
+    overflow: hidden;  
+}
+
+.card-saled {
+    --border-color: gray; 
+    --border-style: 4px solid gray;  
+    --text-color-up: gray;
+    cursor: pointer;      
+    position: relative; 
+    overflow: hidden;
+}
+
+.whiteMask {
+    background: linear-gradient(-49deg, white 0%, white 95.2%, transparent 95.2%); 
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;  
+    position: absolute;
+    border-radius: 2%;
+    top: 0;
+    left: 0;   
+    z-index: 100;
+}
+
+.cardUp {  
+    height: 4.4rem;
+    width: 100%;   
+    display: flex;
+    justify-content: flex-start;      
+}
+
+.leftCorner {  	   
+	width: 44px;
+	height: 44px;
+	background: linear-gradient(to top left, white 44%, var(--border-color) 44%, var(--border-color) 52%, transparent 52%);           
+}
+
+.rightCorner {
+    padding-left: 1.8rem;  
+    border-top-right-radius: 1rem 1rem; 
+    background-color: white;
+    width: 100%;
+    border-top: var(--border-style);
+    border-right: var(--border-style);    
+}
+
+.rightCorner > p {
+    padding-top: 2.0rem;
+    color: var(--text-color-up);
+}
+
+.cardHeader {
+    padding-left: 4.8rem;
+    background-color: white; 
+    border-left: var(--border-style);
+    border-right: var(--border-style);
+    font-weight: bold;
+    color: var(--font-color-black);
+}
+
+.cardHeader > h2 {
+    font-size: 4.8rem; 
+}
+
+.cardHeader > h3 {
+    font-size: 2.4rem; 
+}
+
+.cardHeaderDown {
+    font-size: 1.4rem;
+    padding-top: 2.0rem;
+    padding-left: 4.8rem;
+    background-color: white;
+    border-left: var(--border-style);
+    border-right: var(--border-style);
+    color: var(--font-color-gray);
+    position: relative;
+}
+
+.happyText {
+    position: absolute;
+    top: 5.2rem;
+    left: 4.8rem;
+    z-index: 1;
+}
+
+.happyText-saled {
+    position: absolute;
+    top: 5.2rem;
+    left: 4.8rem;
+    z-index: 500;
+    color: red;
+}
+
+.cardBody {   
+    background-color: white;     
+    padding: 3.4rem 0 0 0;
+    border-bottom: var(--border-style);
+    border-left: var(--border-style);
+    border-right: var(--border-style);    
+    border-radius: 0 0 3% 3%; 
+    position: relative;    
+    overflow: hidden;    
+}
+
+.cardBody > img {   
+    margin-bottom: -0.6rem;
+}
+
+.weight {
+    position: absolute;
+    right: 1.6rem;
+    bottom: 1.6rem;
+    background-color: var(--border-color);
+    width: 8.0rem;
+    height: 8.0rem;
+    border-radius: 50%;
+    text-align: center; 
+    color: var(--font-color-white);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+}
+
+.weight > h2 {
+    padding-top: 0.8rem;
+    font-size: 4.2rem;
+    font-weight: normal;
+    line-height: 3.4rem; 
+}
+
+
+.weight > p {
+    font-size: 2.0rem;
+}
+
+.cardDescription {
+    margin: 1.6rem auto;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--font-color-white);
+}
+
+.cardDescriptionText-saled {
+    color: var(--font-color-white)
+}
+.cardDescriptionText-saled {
+    color: #ffff66;
+}
+
+.buyStyle {
+    color: #1698d9;
+    position: relative;
+    border-bottom: 1px dashed #1698d9;
+}
+
+
+.buyStyle-hover {
+    color: #2ea8e6;
+    border-bottom: 1px dashed #2ea8e6;
+    cursor: pointer;
+}
+
+.buyStyle-active {
+    display: none;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+  }
+  
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+
+    .backgroundShadow {
+        height: 100%;
+    }
+
+    .mainSection  {        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 320px);
+        grid-gap: 4rem;
+        width: 100%;              
+    }      
+}
+  
+@media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+
+    .mainSection  {        
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
